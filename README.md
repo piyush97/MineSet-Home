@@ -22,7 +22,7 @@ Mine Set
 
 ```bash
 $ git clone https://github.com/piyush97/MineSet-FrontEnd --depth=1
-$ cd ant-design-pro
+$ cd MineSet-FrontEnd
 $ npm install
 $ npm start         # visit http://localhost:8000
 ```
