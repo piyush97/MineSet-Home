@@ -46,24 +46,8 @@ class Dashboard extends React.Component {
             <Col xs={12} md={4}>
               <Card className="card-chart">
                 <CardHeader>
-                  <CardCategory>Global Sales</CardCategory>
-                  <CardTitle tag="h4">Shipped Products</CardTitle>
-                  <UncontrolledDropdown>
-                    <DropdownToggle
-                      className="btn-round btn-simple btn-icon"
-                      color="default"
-                    >
-                      <i className="now-ui-icons loader_gear" />
-                    </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem>Action</DropdownItem>
-                      <DropdownItem>Another Action</DropdownItem>
-                      <DropdownItem>Something else here</DropdownItem>
-                      <DropdownItem className="text-danger">
-                        Remove data
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
+                  <CardCategory>Odisha</CardCategory>
+                  <CardTitle tag="h4">Year wise Mineral Yield</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area">
@@ -88,24 +72,8 @@ class Dashboard extends React.Component {
             <Col xs={12} md={4}>
               <Card className="card-chart">
                 <CardHeader>
-                  <CardCategory>2018 Sales</CardCategory>
-                  <CardTitle tag="h4">All products</CardTitle>
-                  <UncontrolledDropdown>
-                    <DropdownToggle
-                      className="btn-round btn-simple btn-icon"
-                      color="default"
-                    >
-                      <i className="now-ui-icons loader_gear" />
-                    </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem>Action</DropdownItem>
-                      <DropdownItem>Another Action</DropdownItem>
-                      <DropdownItem>Something else here</DropdownItem>
-                      <DropdownItem className="text-danger">
-                        Remove data
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
+                  <CardCategory>Environmental Factors</CardCategory>
+                  <CardTitle tag="h4">Air Quality Index</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area">
@@ -130,8 +98,8 @@ class Dashboard extends React.Component {
             <Col xs={12} md={4}>
               <Card className="card-chart">
                 <CardHeader>
-                  <CardCategory>Email Statistics</CardCategory>
-                  <CardTitle tag="h4">24 Hours Performance</CardTitle>
+                  <CardCategory>Inspection Requirements</CardCategory>
+                  <CardTitle tag="h4">1 Year Performance</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area">
@@ -153,7 +121,7 @@ class Dashboard extends React.Component {
             <Col xs={12} md={6}>
               <Card className="card-tasks">
                 <CardHeader>
-                  <CardCategory>Backend Development</CardCategory>
+                  <CardCategory>Task for Mine Employees</CardCategory>
                   <CardTitle tag="h4">Tasks</CardTitle>
                 </CardHeader>
                 <CardBody>
