@@ -7,10 +7,6 @@ import {
   CardTitle,
   Row,
   Col,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   Table
 } from "reactstrap";
 // react plugin used to create charts
@@ -35,10 +31,10 @@ class Dashboard extends React.Component {
         <PanelHeader
           size="lg"
           content={
-            <Line
-              data={dashboardPanelChart.data}
-              options={dashboardPanelChart.options}
-            />
+            <div>
+              <h1 style={{float:"left",color:'#fff'}}>[LOGO]MineSet- For a Greener Odisha</h1>
+              <h6 style={{ float: "right", color: '#fff' }}> Made in Odisha[Logo]</h6>
+            </div>
           }
         />
         <div className="content">
