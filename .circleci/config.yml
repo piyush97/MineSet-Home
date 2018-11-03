@@ -1,9 +1,32 @@
 version: 2
 jobs:
   build:
+    ignore:
+        - gh-pages
     docker: # use the docker executor type; machine and macos executors are also supported
-        - image: circleci/node:8 
+        - image: circleci/node:10
+    environment:
+        - SOURCE_BRANCH: master
+        - TARGET_BRANCH: gh-pages
     steps:
       - checkout # check out the code in the project directory
-      - run: npm i # npm i for install dependencies
-      - run: npm run build # run the build
+      
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+
+      - run:
+            name: Install dependencies
+            command: npm install
+
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+
+      - run:
+            name: Build
+            command: npm run build
+
+
