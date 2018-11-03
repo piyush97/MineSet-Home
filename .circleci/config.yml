@@ -7,7 +7,6 @@ jobs:
         - image: circleci/node:10
     environment:
         - SOURCE_BRANCH: master
-        - TARGET_BRANCH: gh-pages
     steps:
       - checkout # check out the code in the project directory
 
@@ -30,5 +29,10 @@ jobs:
       - run:
             name: Build
             command: npm run build
-
+    
+    deployment:
+    staging:
+        branch: master
+        heroku:
+        appname: mineset
 
