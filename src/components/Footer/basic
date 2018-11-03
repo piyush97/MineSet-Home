@@ -1,0 +1,15 @@
+<!DOCTYPE htmk>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Javacript</title>
+</head>
+<body>
+<h1>
+Javascript basic variables
+</h1>
+<script>
+console.log("Hello WOrld")
+</script>
+</body>
+</html>
