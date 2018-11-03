@@ -1,8 +1,38 @@
 version: 2
 jobs:
   build:
+    ignore:
+        - gh-pages
     docker: # use the docker executor type; machine and macos executors are also supported
-        - image: circleci/node:8
+        - image: circleci/node:10
+    environment:
+        - SOURCE_BRANCH: master
     steps:
       - checkout # check out the code in the project directory
-      - run: npm run build # run the `echo` command
+
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+
+      - run:
+            name: Install dependencies
+            command: npm install
+      
+      - run: npm rebuild node-sass
+
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+
+      - run:
+            name: Build
+            command: npm run build
+    
+    deployment:
+    staging:
+        branch: master
+        heroku:
+        appname: mineset
+
