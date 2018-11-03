@@ -48,15 +48,24 @@ class Dashboard extends React.Component {
             <Col xs={12} md={12} lg={12} sm={12}>
               <Carousel>
                 <div>
-                  <img src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" />
+                  <img
+                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" 
+                    alt="1"
+                  />
                   <p className="legend">Legend 1</p>
                 </div>
                 <div>
-                  <img src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" />
+                  <img
+                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" 
+                    alt="1"
+                  />
                   <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                  <img src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" />
+                  <img
+                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" 
+                    alt="1"
+                  />
                   <p className="legend">Legend 3</p>
                 </div>
               </Carousel>
