@@ -98,12 +98,7 @@ workflows:
   build_accept_deploy:
     jobs:
       - prepare
-      - lint:
-          requires:
-            - prepare
       - build:
-          requires:
-            - lint
       - tu:
           requires:
             - build
