@@ -16,7 +16,7 @@ import { Line, Bar } from "react-chartjs-2";
 import { PanelHeader, Stats, CardCategory, Tasks } from "components";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 
 import {
   dashboardShippedProductsChart,
