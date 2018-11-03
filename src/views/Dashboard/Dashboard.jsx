@@ -15,8 +15,10 @@ import { Line, Bar } from "react-chartjs-2";
 
 import { PanelHeader, Stats, CardCategory, Tasks } from "components";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 import {
-  dashboardPanelChart,
   dashboardShippedProductsChart,
   dashboardAllProductsChart,
   dashboard24HoursPerformanceChart
@@ -32,12 +34,34 @@ class Dashboard extends React.Component {
           size="lg"
           content={
             <div>
-              <h1 style={{float:"left",color:'#fff'}}>[LOGO]MineSet- For a Greener Odisha</h1>
-              <h6 style={{ float: "right", color: '#fff' }}> Made in Odisha[Logo]</h6>
+              <h1 style={{ float: "left", color: "#fff" }}>
+                [LOGO]MineSet- For a Greener Odisha
+              </h1>
+              <h6 style={{ float: "right", color: "#fff" }}>
+                Made in Odisha[Logo]
+              </h6>
             </div>
           }
         />
         <div className="content">
+          <Row>
+            <Col xs={12} md={12} lg={12} sm={12}>
+              <Carousel>
+                <div>
+                  <img src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" />
+                  <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                  <img src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" />
+                  <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                  <img src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" />
+                  <p className="legend">Legend 3</p>
+                </div>
+              </Carousel>
+            </Col>
+          </Row>
           <Row>
             <Col xs={12} md={4}>
               <Card className="card-chart">
