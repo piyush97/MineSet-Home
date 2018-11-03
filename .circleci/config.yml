@@ -19,6 +19,8 @@ jobs:
             name: Install dependencies
             command: npm install
       
+      - run: npm rebuild node-sass
+
       - restore_cache:
           keys:
               # when lock file changes, use increasingly general patterns to restore cache
