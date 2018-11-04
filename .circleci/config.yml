@@ -39,5 +39,5 @@ jobs:
       - run:
           name: Deploy Master to Heroku
           command: |
-            git push https://heroku:fd3ef91f-f02a-4498-a4ba-5d04f22355ed@git.heroku.com/mineset.git master
+            git push $PiyushURL master
 
