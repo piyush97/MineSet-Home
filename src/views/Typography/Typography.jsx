@@ -21,42 +21,48 @@ class Typography extends React.Component {
                 <CardBody>
                   <div className="typography-line">
                     <h1>
-                      <span>Header 1</span>The Life of Now Ui Dashboard{" "}
+                      <span>Header 1</span>
+                      The Life of Now Ui Dashboard{" "}
                     </h1>
                   </div>
                   <div className="typography-line">
                     <h2>
-                      <span>Header 2</span>The Life of Now Ui Dashboard{" "}
+                      <span>Header 2</span>
+                      The Life of Now Ui Dashboard{" "}
                     </h2>
                   </div>
                   <div className="typography-line">
                     <h3>
-                      <span>Header 3</span>The Life of Now Ui Dashboard{" "}
+                      <span>Header 3</span>
+                      The Life of Now Ui Dashboard{" "}
                     </h3>
                   </div>
                   <div className="typography-line">
                     <h4>
-                      <span>Header 4</span>The Life of Now Ui Dashboard{" "}
+                      <span>Header 4</span>
+                      The Life of Now Ui Dashboard{" "}
                     </h4>
                   </div>
                   <div className="typography-line">
                     <h5>
-                      <span>Header 5</span>The Life of Now Ui Dashboard{" "}
+                      <span>Header 5</span>
+                      The Life of Now Ui Dashboard{" "}
                     </h5>
                   </div>
                   <div className="typography-line">
                     <h6>
-                      <span>Header 6</span>The Life of Now Ui Dashboard{" "}
+                      <span>Header 6</span>
+                      The Life of Now Ui Dashboard{" "}
                     </h6>
                   </div>
                   <div className="typography-line">
                     <p>
-                      <span>Paragraph</span>
-                      I will be the leader of a company that ends up being worth
-                      billions of dollars, because I got the answers. I
-                      understand culture. I am the nucleus. I think that’s a
-                      responsibility that I have, to push possibilities, to show
-                      people, this is the level that things could be at.
+                      <span>Paragraph</span>I will be the leader of a company
+                      that ends up being worth billions of dollars, because I
+                      got the answers. I understand culture. I am the nucleus. I
+                      think that’s a responsibility that I have, to push
+                      possibilities, to show people, this is the level that
+                      things could be at.
                     </p>
                   </div>
                   <div className="typography-line">

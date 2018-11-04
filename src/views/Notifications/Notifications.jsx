@@ -77,7 +77,8 @@ class Notifications extends React.Component {
                   rel="noopener noreferrer"
                 >
                   The Full Documentation
-                </a>.
+                </a>
+                .
               </p>
             </div>
           }

@@ -1,6 +1,6 @@
 import Dashboard from "views/Dashboard/Dashboard.jsx";
 // import Notifications from "views/Notifications/Notifications.jsx";
-// import Icons from "views/Icons/Icons.jsx";
+import Icons from "views/Icons/Icons.jsx";
 // import Typography from "views/Typography/Typography.jsx";
 // import TableList from "views/TableList/TableList.jsx";
 // import Maps from "views/Maps/Maps.jsx";
@@ -14,7 +14,12 @@ var dashRoutes = [
     icon: "design_app",
     component: Dashboard
   },
-  // { path: "/icons", name: "Icons", icon: "design_image", component: Icons },
+  {
+    path: "/icons",
+    name: "Mine Login",
+    icon: "design_image",
+    component: Icons
+  },
   // { path: "/maps", name: "Maps", icon: "location_map-big", component: Maps },
   // {
   //   path: "/notifications",

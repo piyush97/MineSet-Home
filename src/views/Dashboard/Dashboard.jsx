@@ -9,7 +9,6 @@ import { PanelHeader } from "components";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-
 class Dashboard extends React.Component {
   render() {
     return (
@@ -33,21 +32,21 @@ class Dashboard extends React.Component {
               <Carousel>
                 <div>
                   <img
-                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" 
+                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg"
                     alt="1"
                   />
                   <p className="legend">Legend 1</p>
                 </div>
                 <div>
                   <img
-                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" 
+                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg"
                     alt="1"
                   />
                   <p className="legend">Legend 2</p>
                 </div>
                 <div>
                   <img
-                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" 
+                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg"
                     alt="1"
                   />
                   <p className="legend">Legend 3</p>
@@ -71,7 +70,7 @@ class Dashboard extends React.Component {
                       <p> Image </p>
                     </Col>
                   </Row>
-               </CardBody>
+                </CardBody>
               </Card>
             </Col>
           </Row>
@@ -81,21 +80,21 @@ class Dashboard extends React.Component {
               <Carousel>
                 <div>
                   <img
-                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" 
+                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg"
                     alt="1"
                   />
                   <p className="legend">Legend 1</p>
                 </div>
                 <div>
                   <img
-                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" 
+                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg"
                     alt="1"
                   />
                   <p className="legend">Legend 2</p>
                 </div>
                 <div>
                   <img
-                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg" 
+                    src="http://pragativadi.com/wp-content/uploads/2017/11/odisha.jpg"
                     alt="1"
                   />
                   <p className="legend">Legend 3</p>

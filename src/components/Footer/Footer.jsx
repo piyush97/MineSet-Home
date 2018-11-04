@@ -25,16 +25,14 @@ class Footer extends React.Component {
           </nav>
           <div className="copyright">
             &copy; {1900 + new Date().getYear()}, Designed by{" "}
-            <a target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a target="_blank" rel="noopener noreferrer">
               Team Avocets
-            </a>. Coded by{" "}
-            <a target="_blank"
-              rel="noopener noreferrer"
-            >
+            </a>
+            . Coded by{" "}
+            <a target="_blank" rel="noopener noreferrer">
               Piyush Mehta
-            </a>.
+            </a>
+            .
           </div>
         </Container>
       </footer>
