@@ -10,19 +10,6 @@ class Footer extends React.Component {
         className={"footer" + (this.props.default ? " footer-default" : "")}
       >
         <Container fluid={this.props.fluid ? true : false}>
-          <nav>
-            <ul>
-              <li>
-                <a>Creative Tim</a>
-              </li>
-              <li>
-                <a>About Us</a>
-              </li>
-              <li>
-                <a>Blog</a>
-              </li>
-            </ul>
-          </nav>
           <div className="copyright">
             &copy; {1900 + new Date().getYear()}, Designed by{" "}
             <a target="_blank" rel="noopener noreferrer">
