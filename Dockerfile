@@ -1,15 +1,19 @@
-FROM node:latest
+# base image
+FROM node:9.4
 
-RUN mkdir -p /usr/src/app
+# set working directory
 WORKDIR /usr/src/app
 
-COPY package.json /usr/src/app/
-
+# install and cache app dependencies
+COPY package*.json ./
+ADD package.json /usr/src/app/package.json
 RUN npm install
 
-ADD src /usr/src/app/src
-ADD public /usr/src/app/public
+# Bundle app source
+COPY . .
 
-RUN npm run build
+# Specify port
+EXPOSE 3000
 
-CMD [ "npm", "start"]
+# start app
+CMD ["npm", "start"]
