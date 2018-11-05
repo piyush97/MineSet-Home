@@ -1,0 +1,1 @@
+rm .DS_Store
