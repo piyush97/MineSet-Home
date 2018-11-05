@@ -1,32 +1,37 @@
 import Dashboard from "views/Dashboard/Dashboard.jsx";
-// import Notifications from "views/Notifications/Notifications.jsx";
+import Notifications from "views/Notifications/Notifications.jsx";
 import Icons from "views/Icons/Icons.jsx";
 // import Typography from "views/Typography/Typography.jsx";
 // import TableList from "views/TableList/TableList.jsx";
-// import Maps from "views/Maps/Maps.jsx";
+import Maps from "views/Maps/Maps.jsx";
 // import Upgrade from "views/Upgrade/Upgrade.jsx";
 // import UserPage from "views/UserPage/UserPage.jsx";
 
 var dashRoutes = [
   {
     path: "/dashboard",
-    name: "Mine Master Data",
+    name: "HomePage",
     icon: "design_app",
     component: Dashboard
   },
   {
-    path: "/icons",
-    name: "Mine Login",
-    icon: "design_image",
+    path: "/ospc-login",
+    name: "OSPC Login",
+    icon: "media-1_button-power",
     component: Icons
   },
-  // { path: "/maps", name: "Maps", icon: "location_map-big", component: Maps },
-  // {
-  //   path: "/notifications",
-  //   name: "Notifications",
-  //   icon: "ui-1_bell-53",
-  //   component: Notifications
-  // },
+  {
+    path: "/mine-login",
+    name: "Mine Login",
+    icon: "media-1_button-power",
+    component: Maps
+  },
+  {
+    path: "/regional-login",
+    name: "Regional Login",
+    icon: "media-1_button-power",
+    component: Notifications
+  },
   // {
   //   path: "/user-page",
   //   name: "User Profile",
