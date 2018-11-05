@@ -15,9 +15,9 @@ import {
   CardImage,
   CardText
 } from "mdbreact";
-
 import Logo from "MineSetTransparet.png";
 import IAM from "imo-logo.png";
+
 class Dashboard extends React.Component {
   constructor(props, context) {
     super(props, context);
