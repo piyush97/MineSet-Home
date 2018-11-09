@@ -15,8 +15,8 @@ var dashRoutes = [
     component: Dashboard
   },
   {
-    path: "/ospc-login",
-    name: "OSPC Login",
+    path: "/OSPCB-login",
+    name: "OSPCB Login",
     icon: "media-1_button-power",
     component: Icons
   },
