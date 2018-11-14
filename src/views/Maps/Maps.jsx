@@ -40,7 +40,7 @@ class FullScreenMap extends React.Component {
                               inputProps: {
                                 type: "text",
                                 disabled: true,
-                                defaultValue: "Talcher Mine"
+                                defaultValue: ["Talcher Mine"]
                               }
                             },
                             {
