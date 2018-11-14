@@ -8,6 +8,14 @@ import CustomButton from "../../components/CustomButton/CustomButton";
 // import icons from "variables/icons";
 
 class Icons extends React.Component {
+  constructor(props) {
+    super(props);
+    this.newClick = this.newClick.bind(this);
+  }
+  newClick() {
+    const url = "http://ospcb.herokuapp.com";
+    window.open(url, "_blank");
+  }
   render() {
     return (
       <div>
@@ -52,7 +60,11 @@ class Icons extends React.Component {
                             }
                           ]}
                         />
-                        <CustomButton color="primary">Login in</CustomButton>
+                        <a onClick={this.newClick}>
+                          <CustomButton color="primary">
+                            Login in
+                          </CustomButton>
+                        </a>
                       </form>
                     </Col>
                   </center>

@@ -7,6 +7,14 @@ import FormInputs from "../../components/FormInputs/FormInputs";
 import CustomButton from "../../components/CustomButton/CustomButton";
 
 class FullScreenMap extends React.Component {
+  constructor(props) {
+    super(props);
+    this.newClick = this.newClick.bind(this);
+  }
+  newClick() {
+    const url = "http://minesitedashboard.herokuapp.com";
+    window.open(url, "_blank");
+  }
   render() {
     return (
       <div>
@@ -32,7 +40,7 @@ class FullScreenMap extends React.Component {
                               inputProps: {
                                 type: "text",
                                 disabled: true,
-                                defaultValue: "Mine Data 1"
+                                defaultValue: "Talcher Mine"
                               }
                             },
                             {
@@ -51,7 +59,9 @@ class FullScreenMap extends React.Component {
                             }
                           ]}
                         />
-                        <CustomButton color="primary">Login in</CustomButton>
+                        <a onClick={this.newClick}>
+                          <CustomButton color="primary">Login in</CustomButton>
+                        </a>
                       </form>
                     </Col>
                   </center>
